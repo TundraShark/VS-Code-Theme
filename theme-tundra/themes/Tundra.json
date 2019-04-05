@@ -1,0 +1,153 @@
+{
+	"name": "Tundra",
+	"type": "dark",
+	"$schema": "vscode://schemas/color-theme",
+	"colors": {
+		"editor.background": "#272822",
+		"editor.foreground": "#f8f8f2",
+		"activityBarBadge.background": "#007acc",
+		"sideBarTitle.foreground": "#bbbbbb",
+
+		"statusBar.background": "#00014b",
+		"statusBar.foreground": "#f8f8f2",
+		"statusBar.border"    : "#000000",
+		"statusBar.debuggingBackground": "#000266",
+		"statusBar.debuggingForeground": "#f8f8f2",
+	},
+	"tokenColors": [{
+		"name": "Comments",
+		"settings": {"foreground": "#00db00"},
+		"scope": [
+			"comment"
+		]
+	},{
+		"name": "Operators",
+		"settings": {"foreground": "#f49ac2"},
+		"scope": [
+			"keyword.operator",
+			"punctuation.separator.key-value"
+		]
+	},{
+		"name": "Single and double quotes",
+		"settings": {"foreground": "#e6dc64"},
+		"scope": [
+			"punctuation.definition.string"
+		]
+	},{
+		"name": "JSON Keys",
+		"settings": {"foreground": "#d392ff"},
+		"scope": [
+			"meta.object-literal.key",
+			"meta.object-literal.key string.quoted.double",
+			"support.type.property-name"
+		]
+	},{
+		"name": "Templates",
+		"settings": {"foreground": "#ffb347"},
+		"scope": [
+			"punctuation.definition.string.template",
+			"string.template"
+		]
+	},{
+		"name": "({[",
+		"settings": {"foreground": "#ffb347"},
+		"scope": [
+			"meta.brace.round",
+			"meta.brace.square",
+			"punctuation.definition.block",
+			"punctuation.definition.parameters",
+			"punctuation.definition.dictionary",
+			"punctuation.definition.array",
+			"punctuation.definition.binding-pattern.array"
+		]
+	},{
+		"name": "Variables",
+		"settings": {"foreground": "#ff6961"},
+		"scope": [
+			"variable.other.object",
+			"variable.other.readwrite",
+			"variable.other.property",
+			"variable.other.constant",
+			"variable.parameter",
+			"support.variable.property"
+		]
+	},{
+		"name": "Support Functions",
+		"settings": {"foreground": "#e0e0e0"},
+		"scope": [
+			"support.function",
+			"support.class",
+			"support.variable.object.process"
+		]
+	},{
+		"name": "Strings",
+		"settings": {"foreground": "#e6dc64"},
+		"scope": [
+			"string.quoted.double"
+		]
+	},{
+		"name": "Semicolon",
+		"settings": {"foreground": "#e0e0e0"},
+		"scope": [
+			"punctuation.terminator.statement"
+		]
+	},{
+		"name": "Commas",
+		"settings": {"foreground": "#e0e0e0"},
+		"scope": [
+			"punctuation.separator.comma",
+			"punctuation.separator.array"
+		]
+	},{
+		"name": "Function Entity",
+		"settings": {"foreground": "#77dd77"},
+		"scope": [
+			"entity.name.function",
+			"storage.modifier.async"
+		]
+	},{
+		"name": "Integers",
+		"settings": {"foreground": "#ae81ff"},
+		"scope": [
+			"constant.numeric.decimal"
+		]
+	},{
+		"name": "If Else For While Do Try Catch Return Var Function Async Await",
+		"settings": {"foreground": "#87ceeb"},
+		"scope": [
+			"keyword.control.loop",
+			"keyword.control.conditional",
+			"keyword.control.trycatch",
+			"keyword.control.flow",
+			"storage.type",
+			"storage.type.function",
+			"meta.function"
+		]
+	},{
+		"name": "Accessor",
+		"settings": {"foreground": "#77dd77"},
+		"scope": [
+			"punctuation.accessor"
+		]
+	},{
+		"name": "True & False",
+		"settings": {"foreground": "#c23b22"},
+		"scope": [
+			"constant.language.boolean"
+		]
+	}]
+}
+
+// Red         | ff6961
+// Orange      | ffb347
+// Yellow      | e6dc64
+// Green       | 77dd77
+// Blue        | 87ceeb
+// Purple      | ae81ff
+// Gray        | cfcfc4
+// Brown       | 836953
+// Pink        | f49ac2
+// Dark Red    | c23b22
+// Dark Blue   | 779ecb
+// Dark Purple | 966fd6
+// Dark Green  | 03c03c

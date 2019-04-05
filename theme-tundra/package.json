@@ -1,0 +1,19 @@
+{
+  "name": "tundra",
+  "displayName": "Tundra",
+  "description": "",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.32.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [{
+      "label": "Tundra",
+      "uiTheme": "vs-dark",
+      "path": "./themes/Tundra.json"
+    }]
+  }
+}
