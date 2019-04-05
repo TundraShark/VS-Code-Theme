@@ -39,9 +39,11 @@
 		"scope": [
 			"meta.object-literal.key",
 			"meta.object-literal.key string.quoted.double",
+			"meta.object-literal.key.js entity.name.function.js",
 			"support.type.property-name"
 		]
-	},{
+	},
+	{
 		"name": "Templates",
 		"settings": {"foreground": "#ffb347"},
 		"scope": [
@@ -102,8 +104,7 @@
 		"name": "Function Entity",
 		"settings": {"foreground": "#77dd77"},
 		"scope": [
-			"entity.name.function",
-			"storage.modifier.async"
+			"entity.name.function"
 		]
 	},{
 		"name": "Integers",
@@ -119,9 +120,17 @@
 			"keyword.control.conditional",
 			"keyword.control.trycatch",
 			"keyword.control.flow",
+			"keyword.control.export",
+			"keyword.control.default",
 			"storage.type",
 			"storage.type.function",
 			"meta.function"
+		]
+	},{
+		"name": "This",
+		"settings": {"foreground": "#ffd700"},
+		"scope": [
+			"variable.language.this"
 		]
 	},{
 		"name": "Accessor",
@@ -134,6 +143,132 @@
 		"settings": {"foreground": "#c23b22"},
 		"scope": [
 			"constant.language.boolean"
+		]
+	},
+	// HTML
+	{
+		"name": "HTML: <>",
+		"settings": {"foreground": "#dbdbdb"},
+		"scope": [
+			"punctuation.definition.tag.begin.html",
+			"punctuation.definition.tag.end.html"
+		]
+	},{
+		"name": "HTML: Tag Names",
+		"settings": {"foreground": "#f92672"},
+		"scope": [
+			"entity.name.tag.block.any.html",
+			"entity.name.tag.template.html",
+			"entity.name.tag.script.html",
+			"entity.name.tag.style.html",
+			"entity.name.tag.html"
+		]
+	},{
+		"name": "HTML: Attribute Names",
+		"settings": {"foreground": "#49e012"},
+		"scope": [
+			"entity.other.attribute-name.html"
+		]
+	},{
+		"name": "HTML: =",
+		"settings": {"foreground": "#f49ac2"},
+		"scope": [
+			"meta.tag.block.any.html",
+			"meta.tag.other.html",
+			"meta.tag.any.html"
+		]
+	},{
+		"name": "HTML: Quoted Strings",
+		"settings": {"foreground": "#e6dc64"},
+		"scope": [
+			"string.quoted.double.html",
+			"text.html variable.other.readwrite.js"
+		]
+	},{
+		"name": "{{ }}",
+		"settings": {"foreground": "#7698e2"},
+		"scope": [
+			"punctuation.definition.generic.begin.html",
+			"punctuation.definition.generic.end.html"
+		]
+	},{
+		"name": "Text",
+		"settings": {"foreground": "#d1d1ce"},
+		"scope": [
+			"text.html"
+		]
+	},
+	// CSS
+	{
+		"name": "CSS: {}",
+		"settings": {"foreground": "#ffb347"},
+		"scope": [
+			"punctuation.section.property-list.begin.bracket.curly.scss",
+			"punctuation.section.property-list.end.bracket.curly.scss"
+		]
+	},{
+		"name": "CSS: &",
+		"settings": {"foreground": "#f49ac2"},
+		"scope": [
+			"entity.name.tag.reference.scss"
+		]
+	},{
+		"name": "CSS: Pseudo-Elements",
+		"settings": {"foreground": "#dab143"},
+		"scope": [
+			"entity.other.attribute-name.pseudo-class.css"
+		]
+	},{
+		"name": "CSS: Tag Name",
+		"settings": {"foreground": "#f92672"},
+		"scope": [
+			"entity.name.tag.css"
+		]
+	},{
+		"name": "CSS: Attribute Name",
+		"settings": {"foreground": "#49e012"},
+		"scope": [
+			"entity.other.attribute-name.class.css"
+		]
+	},{
+		"name": "CSS: Property Name",
+		"settings": {"foreground": "#ff6961"},
+		"scope": [
+			"support.type.property-name.css",
+			"support.type.vendored.property-name.css"
+		]
+	},{
+		"name": "CSS: Property Value (string)",
+		"settings": {"foreground": "#87ceeb"},
+		"scope": [
+			"support.constant.property-value.css",
+			"support.function.misc.scss",
+			"punctuation.section.function.scss"
+		]
+	},{
+		"name": "CSS: Property Value (numeric)",
+		"settings": {"foreground": "#ae81ff"},
+		"scope": [
+			"constant.numeric.css"
+		]
+	},{
+		"name": "CSS: Colors",
+		"settings": {"foreground": "#daa520"},
+		"scope": [
+			"constant.other.color.rgb-value.hex.css",
+			"support.constant.color.w3c-standard-color-name.css"
+		]
+	},{
+		"name": "CSS: Parameter for URL",
+		"settings": {"foreground": "#7ef37e"},
+		"scope": [
+			"variable.parameter.url.scss"
+		]
+	},{
+		"name": "CSS: Semicolon",
+		"settings": {"foreground": "#e0e0e0"},
+		"scope": [
+			"punctuation.terminator.rule.scss"
 		]
 	}]
 }
@@ -151,3 +286,5 @@
 // Dark Blue   | 779ecb
 // Dark Purple | 966fd6
 // Dark Green  | 03c03c
+// Gold        | ffd700
+// Goldenrod   | daa520
