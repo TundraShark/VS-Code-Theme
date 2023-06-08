@@ -37,6 +37,7 @@
 		"name": "JSON Keys",
 		"settings": {"foreground": "#d392ff"},
 		"scope": [
+			"variable.object.property.ts",
 			"meta.object-literal.key",
 			"meta.object-literal.key string.quoted.double",
 			"meta.object-literal.key.js entity.name.function.js",
@@ -116,14 +117,20 @@
 		"name": "If Else For While Do Try Catch Return Var Function Async Await",
 		"settings": {"foreground": "#87ceeb"},
 		"scope": [
+			"variable.parameter.ts",
+			"keyword.control.from.ts",
+			"keyword.control.import.ts",
 			"keyword.control.loop",
 			"keyword.control.conditional",
 			"keyword.control.trycatch",
 			"keyword.control.flow",
 			"keyword.control.export",
+			"support.type.builtin.ts",
+			"keyword.operator.type.ts",
 			"keyword.control.default",
-			"storage.type",
 			"storage.type.function",
+			"storage.type",
+			"storage.modifier.ts",
 			"meta.function"
 		]
 	},{
@@ -154,9 +161,17 @@
 			"punctuation.definition.tag.end.html"
 		]
 	},{
-		"name": "HTML: Tag Names",
-		"settings": {"foreground": "#f92672"},
+		"name": "HTML: <>",
+		"settings": {"foreground": "#ff5c5c"},
 		"scope": [
+			"support.class.component.html"
+		]
+	},{
+		"name": "HTML: Tag Names",
+		"settings": {"foreground": "#ff3b9d"},
+		"scope": [
+			"entity.other.inherited-class.ts",
+			"entity.name.type.interface.ts",
 			"entity.name.tag.block.any.html",
 			"entity.name.tag.template.html",
 			"entity.name.tag.script.html",
